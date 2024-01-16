@@ -9,5 +9,6 @@
 
     <%= link_to "show", product %>
     <%= link_to "edit", edit_product_path(product) %>
+    <%= button_to "delete", product, method: :delete, form: {data: {turbo_confirm: "Você tem certeza que quer apagar?"}} %>
   </p>
 <% end %>
